@@ -221,7 +221,6 @@
         // 修复ios下微信7.0键盘收起后Webview底部异常的问题
         var ua = navigator.userAgent.toLowerCase();
         if (navigator.userAgent.match(/(iPhone|iPad|iPod|iOS)/i) && ua.match(/MicroMessenger/i)=="micromessenger") {
-            alert("123");
             $(document).delegate('input, select, textarea', 'blur', function() {
                 setTimeout(function() {
                     $('html').animate({
