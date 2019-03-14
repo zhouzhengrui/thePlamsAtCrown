@@ -219,7 +219,9 @@
         // }, 200);
 
         // 修复ios下微信7.0键盘收起后Webview底部异常的问题
-        if (navigator.userAgent.match(/(iPhone|iPad|iPod|iOS)/i)) {
+        var ua = navigator.userAgent.toLowerCase();
+        if (navigator.userAgent.match(/(iPhone|iPad|iPod|iOS)/i) && ua.match(/MicroMessenger/i)=="micromessenger") {
+            alert("123");
             $(document).delegate('input, select, textarea', 'blur', function() {
                 setTimeout(function() {
                     $('html').animate({
@@ -238,11 +240,11 @@
             $(window).on('resize', function() {
                 var nowClientHeight = document.documentElement.clientHeight || document.body.clientHeight;
                 if (clientHeight > nowClientHeight) {
-                    $('footer.footerbar').addClass('fix-android');
-                    $('footer.footerbar').hide();
+                    $('footer.footerbar').addClass('fix-android').hide();
+                    $('footer.footer-ticket').addClass('fix-android').hide();
                 } else {
-                    $('footer.footerbar').removeClass('fix-android');
-                    $('footer.footerbar').show();
+                    $('footer.footerbar').removeClass('fix-android').show();
+                    $('footer.footer-ticket').removeClass('fix-android').show();
                 }
             });
         }
