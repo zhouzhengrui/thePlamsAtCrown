@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>演出名称</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="icofont/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- JS -->
+    <script type="text/javascript" src="js/system.js"></script>
+</head>
+
+
+<body>
+    <!-- ticket start -->
+    <footer class="footer-ticket hairline">
+        <div class="footer-ticket-header">
+            <h5 class="title">已选座位</h5>
+            <p class="total">合计: <span class="red">$888</span></p>
+        </div>
+        <div class="ticket-group">
+            <div class="scroller">
+                <!-- item start -->
+                <div class="ticket hairline">
+                    <p class="price">$888</p>
+                    <p class="name">SVIP / ROW A / 1座</p>
+                    <button class="delete" type="button"></button>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="ticket hairline">
+                    <p class="price">$888</p>
+                    <p class="name">SVIP / ROW A / 2座</p>
+                    <button class="delete" type="button"></button>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="ticket hairline">
+                    <p class="price">$888</p>
+                    <p class="name">SVIP / ROW A / 3座</p>
+                    <button class="delete" type="button"><i class="icon-delete"></i></button>
+                </div>
+                <!-- item over -->
+                <!-- item start -->
+                <div class="ticket hairline">
+                    <p class="price">$888</p>
+                    <p class="name">SVIP / ROW A / 4座</p>
+                    <button class="delete" type="button"></button>
+                </div>
+                <!-- item over -->
+            </div>
+        </div>
+    </footer>
+    <!-- ticket over -->
+    <!-- footer start -->
+    <footer class="footer hairline">
+        <button class="button button-block waves-effect waves-dark" disabled>请先选座</button>
+    </footer>
+    <!-- footer over -->
+    <!-- main start -->
+    <div class="main nprogress-fade nprogress-out">
+        <div class="scroller">
+            <!-- thumbnail start -->
+            <div class="thumbnail photo-swipe hairline">
+                <figure>
+                    <a href="img/theater-current.jpg" data-size="1150x928">
+                        <img src="img/theater-thumbnail.jpg" itemprop="thumbnail" />
+                        <div class="cover">
+                            <i class="icon-search"></i>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+            <!-- thumbnail over -->
+            <!-- form start -->
+            <form class="form">
+                <!-- item start -->
+                <div class="item hairline">
+                    <h4 class="label">区域</h4>
+                    <select class="select">
+                        <option disabled selected hidden>请选择</option>
+                        <option value="">SVIP</option>
+                        <option value="">VIP</option>
+                        <option value="">VIP卡座</option>
+                        <option value="">白金卡座</option>
+                        <option value="">黄金</option>
+                        <option value="">VIP情侣</option>
+                        <option value="">白金情侣</option>
+                    </select>
+                </div>
+                <!-- item start -->
+                <!-- item start -->
+                <div class="item hairline">
+                    <h4 class="label">排数</h4>
+                    <select class="select">
+                        <option disabled selected hidden>请选择</option>
+                        <option value="">ROW A</option>
+                        <option value="">ROW B</option>
+                        <option value="">ROW C</option>
+                    </select>
+                </div>
+                <!-- item start -->
+                <!-- seat start -->
+                <div class="item item-seat hairline">
+                    <h4 class="label">座位号</h4>
+                    <div class="seat-group">
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>1</span>
+                        </label>
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>2</span>
+                        </label>
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>3</span>
+                        </label>
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>4</span>
+                        </label>
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>5</span>
+                        </label>
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>1-2</span>
+                        </label>
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>3-4</span>
+                        </label>
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>卡座1</span>
+                        </label>
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>卡座2</span>
+                        </label>
+                        <label class="seat">
+                            <input class="checkbox hairline" type="checkbox">
+                            <span>卡座3</span>
+                        </label>
+                    </div>
+                </div>
+                <!-- seat over -->
+            </form>
+            <!-- form over -->
+        </div>
+    </div>
+    <!-- main over -->
+    <!-- photoswipe start -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- photoswipe over -->
+    <!-- JavaScript start -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/nprogress/nprogress.js"></script>
+    <script type="text/javascript" src="js/iscroll/iscroll-probe.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="js/photoSwipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="js/waves/waves.min.js"></script>
+    <script type="text/javascript" src="js/modalEffects/classie.js"></script>
+    <script type="text/javascript" src="js/modalEffects/modalEffects.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- JavaScript over -->
+
+    <script type="text/javascript">
+        // nprogress
+        NProgress.start();
+        $(window).load(function() {
+            NProgress.done();
+            $('.nprogress-fade').removeClass('nprogress-out');
+        });
+
+        // 主体容器内容高度发生变化时用这个方法刷新容器高度
+        // setTimeout(function() {
+        //     mainScroll.refresh();
+        // }, 200);
+
+        // 修复ios下微信7.0键盘收起后Webview底部异常的问题
+        if (navigator.userAgent.match(/(iPhone|iPad|iPod|iOS)/i)) {
+            $(document).delegate('input, select, textarea', 'blur', function() {
+                setTimeout(function() {
+                    $('html').animate({
+                        height: '100.1vh'
+                    }, 100, function() {
+                        $(this).animate({
+                            height: '100vh'
+                        }, 1);
+                    });
+                }, 100);
+            });
+        }
+        // 安卓键盘弹出时底部navbar隐藏
+        if (navigator.userAgent.match(/(android)/i)) {
+            var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+            $(window).on('resize', function() {
+                var nowClientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+                if (clientHeight > nowClientHeight) {
+                    $('footer.footerbar').addClass('fix-android');
+                    $('footer.footerbar').hide();
+                } else {
+                    $('footer.footerbar').removeClass('fix-android');
+                    $('footer.footerbar').show();
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
